@@ -3,6 +3,7 @@
 ## Tech Stack
 
 **API:** Java, Spring-boot, Hibernate
+**DB:** MySQL
 
 
 ## Features
@@ -11,3 +12,4 @@
 - Validation
 - Global Exception Handling
 - Response JSON or XML
+- Documented API with Swagger
