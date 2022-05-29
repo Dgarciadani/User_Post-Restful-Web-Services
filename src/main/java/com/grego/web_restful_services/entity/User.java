@@ -7,6 +7,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.Set;
+
 @Data
 @Entity
 @Table(name = "users")
@@ -20,7 +22,7 @@ public class User {
     private Date birthDate;
     @OneToMany
     @JsonIgnore
-    private Iterable<Post> posts;
+    private Set<Post> posts;
 
     public User() {
     }
