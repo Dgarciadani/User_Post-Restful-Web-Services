@@ -13,3 +13,4 @@
 - Global Exception Handling
 - Response JSON or XML
 - Documented API with Swagger
+- Monitoring with Spring-boot Actuator
