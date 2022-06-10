@@ -34,4 +34,9 @@ public class PostController {
     @GetMapping("/")
     public List<PostDto> findAll() {
         return postService.findAll();}
+
+    @GetMapping("/user/{id}/posts")
+    public List<PostDto> findByUserId(@PathVariable Integer id) {
+        return postService.findByUserId(id);
+    }
 }

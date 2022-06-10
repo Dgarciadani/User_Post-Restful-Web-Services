@@ -56,6 +56,11 @@ public class PostService implements IPostService<PostDto> {
         return postRepository.findAll().stream().map(this::mapToDTO).collect(java.util.stream.Collectors.toList());
     }
 
+    @Override
+    public List<PostDto> findByUserId(Integer id) {
+      return  postRepository.findByUserId(id).stream().map(this::mapToDTO).collect(java.util.stream.Collectors.toList());
+    }
+
     //--- Mappers ---
     private PostDto mapToDTO(Post post) {
         return modelMapper.map(post, PostDto.class);

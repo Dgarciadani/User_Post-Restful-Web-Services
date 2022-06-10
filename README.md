@@ -14,3 +14,5 @@
 - Response JSON or XML
 - Documented API with Swagger
 - Monitoring with Spring-boot Actuator
+- Filtering Response with Spring-boot Web-Security dynamic filter
+- Protected Response with Spring-boot Security

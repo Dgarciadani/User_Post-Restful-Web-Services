@@ -9,4 +9,6 @@ public interface IPostService<T> {
     public T updatePost(Integer id, T entity);
     public List<T> findAll();
 
+    public List<T> findByUserId(Integer id);
+
 }
